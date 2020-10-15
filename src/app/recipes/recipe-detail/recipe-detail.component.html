@@ -1,17 +1,17 @@
 <div class="row">
     <div class="col-xs-12">
-      <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 400px;" />
+      <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 200px; max-width: 200px;" />
     </div>
   </div>
   
   <div class="row">
     <div class="col-xs-12">
-      <h1>
+      <h2>
  {{recipe.name}}
-      </h1>
-      <button class="btn btn-primary">To Shopping List</button>
-      <button class="btn btn-success" (click)="onEditRecipe()" >Edit Recipe</button>
-      <button class="btn btn-danger">Delete Recipe</button>
+      </h2>
+      <button class="btn btn-outline-info btn-space">To Shopping List</button>
+      <button class="btn btn-outline-info btn-space" (click)="onEditRecipe()" >Edit Recipe</button>
+      <button class="btn btn-outline-danger btn-space">Delete Recipe</button>
     </div>
   </div>
   
